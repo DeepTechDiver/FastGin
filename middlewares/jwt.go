@@ -1,6 +1,7 @@
 package middlewares
 
 import (
+	"fast-gin/models/user"
 	"fast-gin/utils/jwt"
 	ControllersCommon "fast-gin/utils/response"
 	"github.com/gin-gonic/gin"
@@ -17,7 +18,7 @@ func VerificationToken() gin.HandlerFunc {
 			return
 		}
 		u := new(users.User)
-		if !u.IsExistByField("id", claim.UserID) {
+		if !u.IsExistByField("id", claim.Uid) {
 			ControllersCommon.NotLogin(c, "用户异常")
 			c.Abort()
 			return

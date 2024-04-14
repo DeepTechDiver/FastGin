@@ -20,7 +20,7 @@ type User struct {
 type UserList []User
 
 func (User) TableName() string {
-	return "ey_users"
+	return "fast_users"
 }
 
 // Update 更新数据

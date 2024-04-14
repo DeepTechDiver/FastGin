@@ -5,6 +5,7 @@ package validator
 //将验证器错误翻译成中文
 
 import (
+	"errors"
 	"fast-gin/utils/response"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/locales/en"
@@ -29,15 +30,13 @@ func init() {
 // CheckParams 入参验证
 func CheckParams(ctx *gin.Context, err error) {
 	if err != nil {
-		if _, ok := err.(validator.ValidationErrors); ok {
+		var validationErrors validator.ValidationErrors
+		if errors.As(err, &validationErrors) {
 			for _, fieldError := range err.(validator.ValidationErrors) {
 				msg, _ := ValidTrans.T(fieldError.Tag(), fieldError.Field(), fieldError.Param())
 				response.Error(ctx, msg)
 				return
 			}
-		} else {
-			response.TypeError(ctx, err.Error())
-			return
 		}
 	}
 }
