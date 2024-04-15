@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"fast-gin/global"
-	"fast-gin/utils/response"
-	"fast-gin/utils/validator"
+	"fast-gin/internal/utils/response"
+	"fast-gin/internal/utils/validator"
 	"github.com/gin-gonic/gin"
 )
 

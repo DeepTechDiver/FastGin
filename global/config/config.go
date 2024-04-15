@@ -18,7 +18,7 @@ func init() {
 }
 
 var Config = new(Info)
-var filePath = "./conf/config.yaml"
+var filePath = "./configs/config.yaml"
 
 type SqlConfig struct {
 	IP       string `yaml:"ip"`

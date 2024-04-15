@@ -3,7 +3,7 @@ package users
 import (
 	"crypto/md5"
 	"fast-gin/global"
-	"fast-gin/models/common"
+	"fast-gin/internal/models/common"
 	"fmt"
 )
 

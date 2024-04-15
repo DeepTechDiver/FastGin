@@ -1,7 +1,7 @@
 package user
 
 import (
-	"fast-gin/controllers/user"
+	"fast-gin/internal/controllers/user"
 	"github.com/gin-gonic/gin"
 )
 

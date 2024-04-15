@@ -1,9 +1,9 @@
 package user
 
 import (
-	"fast-gin/controllers"
-	receive "fast-gin/interaction/receive/user"
-	"fast-gin/service/user"
+	"fast-gin/internal/controllers"
+	receive "fast-gin/internal/interaction/receive/user"
+	"fast-gin/internal/service/user"
 	"github.com/gin-gonic/gin"
 )
 

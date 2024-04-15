@@ -1,7 +1,7 @@
 package user
 
 import (
-	receive "fast-gin/interaction/receive/user"
+	receive "fast-gin/internal/interaction/receive/user"
 )
 
 func Register(data *receive.RegisterReceive) (results interface{}, err error) {

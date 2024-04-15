@@ -1,8 +1,8 @@
 package router
 
 import (
-	"fast-gin/consts"
-	"fast-gin/router/user"
+	"fast-gin/internal/consts"
+	"fast-gin/internal/router/user"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"log"

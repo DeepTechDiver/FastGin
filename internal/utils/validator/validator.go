@@ -6,7 +6,7 @@ package validator
 
 import (
 	"errors"
-	"fast-gin/utils/response"
+	"fast-gin/internal/utils/response"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/locales/en"
 	"github.com/go-playground/locales/zh"
